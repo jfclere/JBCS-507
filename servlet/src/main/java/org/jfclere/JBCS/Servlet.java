@@ -48,8 +48,9 @@ public class Servlet extends HttpServlet {
 			response.setHeader("TraceDateParm", sdate);
 
 			response.setHeader("Expires", expires);
-		} else
-			response.setHeader("Expires", "Wed, 21 Oct 2018 07:28:00 GMT");
+		}
+
+		response.setHeader("Last-Modified",  "Mon, 26 Nov 2018 22:08:32 GMT");
 		Date date = new Date();
 		response.setHeader("TraceDate", date.toString());
 		Random rand = new Random();
